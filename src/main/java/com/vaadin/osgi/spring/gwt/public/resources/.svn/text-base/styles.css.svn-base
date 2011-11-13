@@ -1,0 +1,87 @@
+/* v-toolbar styles*/
+.v-menubar-v-toolbar {
+	background: url("images/background.png") repeat scroll 0 0 #FFFFFF;
+	border-top: 1px solid #A7ABB4;
+	border-bottom: 1px solid #A7ABB4;
+	color: #8C8D8F;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.v-menubar-menuitem-v-toolbar-item:hover {
+	cursor: pointer;
+}
+
+.v-menubar-menuitem-v-toolbar-item-bullet {
+	background: url("images/bullet.png") no-repeat center right;
+}
+
+.v-menubar-menuitem-v-toolbar-separator {
+	width: 2px;
+	height: 16px;
+	padding: 3px 5px;
+	background: url("images/separator.png") no-repeat;
+	background-position: center;
+	vertical-align: middle;
+}
+
+.v-menubar-menuitem-v-toolbar-separator:hover {
+	cursor: default;
+}
+
+.v-menubar-submenu>span[class $='v-menubar-menuitem-v-toolbar-separator']
+	{
+	display: none;
+}
+/* v-statusbar styles*/
+.v-statusbar {
+	background: url("images/background.png") repeat scroll 0 0 #FFFFFF;
+	border-top: 1px solid #A7ABB4;
+	border-bottom: 1px solid #A7ABB4;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.v-statusbar-item {
+	text-indent: 8px;
+	margin: 0px 2px;
+}
+
+.v-statusbar-item-hidden {
+	color: transparent;
+	text-shadow: 0px 1px 0px transparent;
+}
+
+.v-progressindicator-hidden > div[class $='v-progressindicator-wrapper']{
+	background: transparent;
+	border: transparent;
+}
+
+.v-progressindicator-hidden > div[class $='v-progressindicator-wrapper'] > div[class
+	$='v-progressindicator-indicator'] {
+	background: transparent;
+}
+
+.v-statusbar-item-box {
+	border-color: #A7ABB4 #FFFFFF #FFFFFF #A7ABB4;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.v-statusbar-item-msg-information {
+	background: url("images/information.png") no-repeat left center;
+	text-indent: 18px;
+}
+
+.v-statusbar-item-msg-confirmation {
+	background: url("images/accept.png") no-repeat left center;
+	text-indent: 18px;
+}
+
+.v-statusbar-item-msg-warning-msg {
+	background: url("images/error.png") no-repeat left center;
+	text-indent: 18px;
+}
+
+.v-statusbar-item-msg-error {
+	background: url("images/exclamation.png") no-repeat left center;
+	text-indent: 18px;
+}
