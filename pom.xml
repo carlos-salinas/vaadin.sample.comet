@@ -72,6 +72,7 @@ Bundle-Version: ${project.version}
 Import-Package: com.vaadin, 
  com.vaadin.ui, 
  com.vaadin.event,
+ com.vaadin.terminal,
  com.vaadin.terminal.gwt.server,
  org.apache.log4j
 ]]></manifestHeaders>
