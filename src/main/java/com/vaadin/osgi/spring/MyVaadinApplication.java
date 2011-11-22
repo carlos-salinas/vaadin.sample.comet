@@ -16,6 +16,8 @@
 package com.vaadin.osgi.spring;
 
 import com.vaadin.Application;
+import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Window;
 
@@ -33,6 +35,15 @@ public class MyVaadinApplication extends Application {
 		window = new Window("My Comet Vaadin Application");
 
 		setMainWindow(window);
+		
+		// Add a button for starting background work
+        	getMainWindow().addComponent(
+            new Button("Start background thread", new Button.ClickListener() {
+                public void buttonClick(ClickEvent event) {
+                    getMainWindow().addComponent(new Label("Waiting for background thread to complete..."));
+                    new BackgroundThread().start();
+                }
+            }));
 		
 	}
 
